@@ -24,10 +24,10 @@ const userRoute = require('./routes/user');
 const authRoute = require('./routes/auth');
 
 //middleware
-const corsOptions = {
-	origin: 'http://localhost:5173', // Replace with your React app's origin
-	credentials: true, // Enable credentials (cookies) in cross-origin requests
-};
+// const corsOptions = {
+// 	origin: 'http://localhost:5173', // Replace with your React app's origin
+// 	credentials: true, // Enable credentials (cookies) in cross-origin requests
+// };
   
 app.use(cors());
 
@@ -64,7 +64,7 @@ mongoose
 	.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 	.then(() => {
 		app.listen(port, () => {
-			console.log('connect');
+			console.log('connected mongodb');
 		});
 	})
 	.catch((err) => {
