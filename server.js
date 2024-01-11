@@ -26,7 +26,7 @@ const authRoute = require('./routes/auth');
 
 //middleware
 const corsOptions = {
-	origin: "*", // Replace with your React app's origin
+	origin: "http://localhost:5173", // Replace with your React app's origin
 	methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
 	credentials: true, // Enable credentials (cookies) in cross-origin requests
 };
