@@ -26,7 +26,7 @@ const authRoute = require('./routes/auth');
 
 //middleware
 const corsOptions = {
-	origin: "https://659fdc2a40efa20692f19ea8--clever-tapioca-cd740f.netlify.app/", // Replace with your React app's origin
+	origin: "https://vishnuecommerceapp.netlify.app/", // Replace with your React app's origin
 	methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
 	credentials: true, // Enable credentials (cookies) in cross-origin requests
 };
