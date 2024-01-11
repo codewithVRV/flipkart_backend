@@ -30,7 +30,7 @@ const corsOptions = {
 	methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
 	credentials: true, // Enable credentials (cookies) in cross-origin requests
 };
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.urlencoded({ extended: true }));
