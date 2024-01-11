@@ -26,11 +26,11 @@ const authRoute = require('./routes/auth');
 
 //middleware
 const corsOptions = {
-	origin: "https://vishnuecommerceapp.netlify.app/", // Replace with your React app's origin
+	origin: "https://vishnuecommerceapp.netlify.app", // Replace with your React app's origin
 	methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
 	credentials: true, // Enable credentials (cookies) in cross-origin requests
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.urlencoded({ extended: true }));
